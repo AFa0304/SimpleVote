@@ -1,0 +1,191 @@
+html,
+body,
+button,
+input,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Sans TC', LiHeiPro, Microsoft JhengHei, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.mask {
+    width           : 100vw;
+    height          : 100vh;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    background-color: gray;
+    opacity         : 0.4;
+    z-index         : 10001;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    background-color: rgb(175, 175, 175);
+}
+
+.no-scroll {
+    overflow: initial !important;
+}
+
+.translate-50 {
+    .translate(-50%, -50%)
+}
+
+.delete-button {
+    border          : none;
+    border-radius   : 8px;
+    background-color: #972424;
+    color           : #fff;
+    font-size       : 14px;
+    font-weight     : bold;
+    padding         : 3px 10px;
+    white-space     : nowrap;
+
+    &:hover {
+        background-color: #500909;
+    }
+}
+
+.add-button {
+    border          : none;
+    border-radius   : 8px;
+    background-color: #2a59be;
+    color           : #fff;
+    font-size       : 20px;
+    font-weight     : bold;
+    padding         : 5px 25px;
+    white-space     : nowrap;
+
+    &:hover {
+        background-color: #113a92;
+    }
+}
+
+.transition-1 {
+    .transition(1)
+}
+
+.list-content {
+    width                     : 100%;
+    height                    : 60vh;
+    background-color          : rgba(255, 255, 255, 0.9);
+    border-bottom-left-radius : 6px;
+    border-bottom-right-radius: 6px;
+    padding                   : 10px 20px;
+    overflow-y                : auto;
+}
+
+.vote-topbar {
+    position: relative;
+    z-index : 3;
+    padding : 10px;
+
+    .back-arrow {
+
+        svg g {
+            fill: #ffffff;
+            .transition(1);
+        }
+
+        &:hover {
+            svg g {
+                fill: #d8d8d8;
+            }
+        }
+    }
+}
+
+.title {
+    font-weight: 600;
+    color      : rgb(8, 8, 8);
+    text-shadow: 2px 2px 3px #8d8d8d;
+}
+
+.vote-options {
+
+    .ant-rate-star-first,
+    .ant-rate-star-second {
+        color: rgb(207, 206, 206);
+    }
+}
+
+@shadow: -1px 0px #999999;
+
+.content-tag {
+    width                  : 50%;
+    border-top-right-radius: 10px;
+    border-top-left-radius : 10px;
+    background-color       : rgba(255, 255, 255, 0.5);
+    text-align             : center;
+    font-size              : 16px;
+    font-weight            : bold;
+    padding                : 5px;
+    cursor                 : pointer;
+    -webkit-box-shadow     : @shadow;
+    -moz-box-shadow        : @shadow;
+    box-shadow             : @shadow;
+    .transition(1);
+
+    &.active {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.vote-button {
+    background-color: #2a59be;
+    padding         : 8px 35px;
+    border-radius   : 8px;
+    cursor          : pointer;
+
+    svg path {
+        fill: #fff;
+    }
+
+    &.result-button {
+        padding         : 4px 20px;
+        background-color: rgb(175, 175, 175);
+
+        &:hover {
+            background-color: #cfcfcf;
+        }
+    }
+}
+
+.back-button {
+    border          : none;
+    border-radius   : 8px;
+    background-color: #afafaf;
+    padding         : 4px 20px;
+
+    svg path:nth-child(2) {
+        fill: #fff;
+    }
+
+    &:hover {
+        background-color: #cfcfcf;
+    }
+}
+
+.translate(@x, @y) {
+    transform        : translate(@x, @y);
+    -ms-transform    : translate(@x, @y);
+    -moz-transform   : translate(@x, @y);
+    -webkit-transform: translate(@x, @y);
+    -o-transform     : translate(@x, @y);
+}
+
+.transition(@sec) {
+    -moz-transition   : all~"@{sec}s";
+    -webkit-transition: all~"@{sec}s";
+    -ms-transition    : all~"@{sec}s";
+    -o-transition     : all~"@{sec}s";
+    transition        : all~"@{sec}s";
+}
