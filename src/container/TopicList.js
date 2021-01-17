@@ -54,7 +54,7 @@ export default class TopicList extends Component {
                                 return (
                                     <div className="topic d-flex justify-content-between align-items-center" key={topic.id}>
                                         <Animated animationIn="fadeInRight" >
-                                            <Link to={"/SimpleVote/build/vote/" + topic.id}>
+                                            <Link to={"/vote/" + topic.id}>
                                                 {topic.title}
                                             </Link>
                                         </Animated>
