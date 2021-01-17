@@ -2,7 +2,7 @@
   "files": {
     "static/js/0.3e13782f.chunk.js": "/SimpleVote/build/static/js/0.3e13782f.chunk.js",
     "main.css": "/SimpleVote/build/static/css/main.71762ab4.chunk.css",
-    "main.js": "/SimpleVote/build/static/js/main.08dc771b.chunk.js",
+    "main.js": "/SimpleVote/build/static/js/main.27e60ebf.chunk.js",
     "runtime-main.js": "/SimpleVote/build/static/js/runtime-main.59935840.js",
     "static/css/3.e47fdd14.chunk.css": "/SimpleVote/build/static/css/3.e47fdd14.chunk.css",
     "static/js/3.812243cc.chunk.js": "/SimpleVote/build/static/js/3.812243cc.chunk.js",
@@ -11,7 +11,7 @@
     "static/js/5.368e951a.chunk.js": "/SimpleVote/build/static/js/5.368e951a.chunk.js",
     "static/js/6.107341f5.chunk.js": "/SimpleVote/build/static/js/6.107341f5.chunk.js",
     "index.html": "/SimpleVote/build/index.html",
-    "precache-manifest.d3371ebf05af50e6131bf9ec5abbb75e.js": "/SimpleVote/build/precache-manifest.d3371ebf05af50e6131bf9ec5abbb75e.js",
+    "precache-manifest.d6c956a3833ce48474ee5aa6cb8a8192.js": "/SimpleVote/build/precache-manifest.d6c956a3833ce48474ee5aa6cb8a8192.js",
     "service-worker.js": "/SimpleVote/build/service-worker.js",
     "static/media/bg.jpg": "/SimpleVote/build/static/media/bg.1c597ac1.jpg"
   },
@@ -20,6 +20,6 @@
     "static/css/4.5156dd3b.chunk.css",
     "static/js/4.313740bb.chunk.js",
     "static/css/main.71762ab4.chunk.css",
-    "static/js/main.08dc771b.chunk.js"
+    "static/js/main.27e60ebf.chunk.js"
   ]
 }

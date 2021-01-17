@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc45de1fa0b044b7d9c0f0d3b1ef45e5",
+    "revision": "c7561fd42ce74e68d475d5ba72c1bd85",
     "url": "/SimpleVote/build/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SimpleVote/build/static/css/4.5156dd3b.chunk.css"
   },
   {
-    "revision": "2d55db87c7915fd11a14",
+    "revision": "c78bb02a60cc1688c9d7",
     "url": "/SimpleVote/build/static/css/main.71762ab4.chunk.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SimpleVote/build/static/js/6.107341f5.chunk.js"
   },
   {
-    "revision": "2d55db87c7915fd11a14",
-    "url": "/SimpleVote/build/static/js/main.08dc771b.chunk.js"
+    "revision": "c78bb02a60cc1688c9d7",
+    "url": "/SimpleVote/build/static/js/main.27e60ebf.chunk.js"
   },
   {
     "revision": "48a6c02cca48655e2bc4",
