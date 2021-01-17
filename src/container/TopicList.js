@@ -71,7 +71,7 @@ export default class TopicList extends Component {
                                 <div className="d-flex align-items-center pt-4 pb-4">
                                     <div className="mr-2"><h3>標題</h3></div>
                                     <div>
-                                        <input type="text" value={addTopicName} placeholder="請輸入標題"
+                                        <input className="w-100" type="text" value={addTopicName} placeholder="請輸入標題"
                                             onChange={(e) => { this.setState({ addTopicName: e.target.value }) }} />
                                     </div>
                                 </div>
@@ -89,7 +89,7 @@ export default class TopicList extends Component {
 
 const TopicContainer = styled.div`
     width:90%;
-    position:absolute;
+    position:fixed;
     top:50%;
     left:50%;
     .list-content{
@@ -105,6 +105,7 @@ const TopicContainer = styled.div`
             font-size:24px;
             font-weight:bold;
             margin:0;
+            white-space:nowrap;
         }
         input[type="text"]{
             border:none;

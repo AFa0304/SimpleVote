@@ -21,6 +21,7 @@ export default class App extends React.Component {
       <Container>
         <Suspense fallback={<Loading />}>
           <Route path="/" exact component={TopicList} />
+          <Route path="/23" exact component={TopicList} />
           <Route path="/vote/:topicID" component={Vote} />
         </Suspense>
       </Container>

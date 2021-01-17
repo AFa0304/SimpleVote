@@ -116,7 +116,7 @@ export default class Vote extends Component {
         this.state.options.map(option => {
             const name = option.optionDatas.optionName
             const score = option.optionDatas.score
-            data.push({
+            return data.push({
                 type: name,
                 score: score
             })
@@ -176,11 +176,13 @@ export default class Vote extends Component {
                                     {
                                         showResult ?
                                             <div className="vote-content">
-                                                <div className="flex-grow-1 pt-3 pb-3">
-                                                    <Bar {...this.getChartDatas()} />
+                                                <div className="flex-grow-1">
+                                                    <Bar className="pt-3 pb-3" {...this.getChartDatas()} />
                                                 </div>
-                                                <div className="d-flex justify-content-end mt-4">
-                                                    <button className="back-button" onClick={() => this.setState({ showResult: false })}><RiArrowGoBackFill size={25} /></button>
+                                                <div className="d-flex justify-content-end">
+                                                    <div className="mt-4">
+                                                        <button className="back-button" onClick={() => this.setState({ showResult: false })}><RiArrowGoBackFill size={25} /></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                             :
@@ -216,10 +218,10 @@ export default class Vote extends Component {
                                 tab === 2 &&
                                 <Animated animationIn="fadeIn">
                                     <div className="d-flex justify-content-center align-items-center mt-4">
-                                        <form onSubmit={this.createOption}>
-                                            <input type="text" value={addOpitionName} placeholder="輸入選項名稱"
+                                        <form className="d-flex justify-content-center align-items-center" onSubmit={this.createOption}>
+                                            <input className="option-input" type="text" value={addOpitionName} placeholder="輸入選項名稱"
                                                 onChange={(e) => { this.setState({ addOpitionName: e.target.value }) }} />
-                                            <input type="submit" className="add-button" value="新增" onClick={this.createOption} />
+                                            <input className="add-button option-submit" type="submit" value="新增" onClick={this.createOption} />
                                         </form>
                                     </div>
                                     <div className="mt-3">
@@ -241,7 +243,7 @@ export default class Vote extends Component {
                             {
                                 tab === 3 &&
                                 <Animated className="clear-record-button text-center" animationIn="fadeIn">
-                                    <div className="mt-2"><h3>真ㄉ要清除投票紀錄ㄇ</h3></div>
+                                    <div className="mt-4 pt-2"><h3>真ㄉ要清除投票紀錄ㄇ</h3></div>
                                     <div className="mt-4 pt-4">
                                         <button className="delete-button" onClick={this.clearScore}>清除</button>
                                     </div>
@@ -267,6 +269,9 @@ const VoteContainer = styled.div`
             outline:none;
             border-bottom:1.8px solid rgba(0, 0, 0, 1);
         }
+    }
+    .option-input{
+        width:80%;
     }
     .add-button{
         font-size:14px;
