@@ -54,12 +54,12 @@ export default class TopicList extends Component {
                                 return (
                                     <div className="topic d-flex justify-content-between align-items-center" key={topic.id}>
                                         <Animated animationIn="fadeInRight" >
-                                            <Link to={"/vote/" + topic.id}>
+                                            <Link to={process.env.PUBLIC_URL + "/vote/" + topic.id}>
                                                 {topic.title}
                                             </Link>
                                         </Animated>
                                         <Animated animationIn="fadeIn" animationInDelay={800}>
-                                            <button className="delete-button" onClick={() => this.removeTopic(topic.id)}><AiTwotoneDelete size={20}/></button>
+                                            <button className="delete-button" onClick={() => this.removeTopic(topic.id)}><AiTwotoneDelete size={20} /></button>
                                         </Animated>
                                     </div>
                                 )

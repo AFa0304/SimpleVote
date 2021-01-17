@@ -150,7 +150,7 @@ export default class Vote extends Component {
             <React.Fragment>
                 <Animated className="vote-topbar d-flex justify-content-between align-items-center" animationIn="bounceInDown">
                     <div className="back-arrow">
-                        <Link to="/">
+                        <Link to={process.env.PUBLIC_URL +"/"}>
                             <FcLeft size={45} />
                         </Link>
                     </div>

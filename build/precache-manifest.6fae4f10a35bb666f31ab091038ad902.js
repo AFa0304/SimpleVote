@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c7561fd42ce74e68d475d5ba72c1bd85",
+    "revision": "a84f094a8c6bbb2ff49bafab1877f3ec",
     "url": "/SimpleVote/build/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SimpleVote/build/static/css/4.5156dd3b.chunk.css"
   },
   {
-    "revision": "c78bb02a60cc1688c9d7",
+    "revision": "0c71d3db2be166a3359e",
     "url": "/SimpleVote/build/static/css/main.71762ab4.chunk.css"
   },
   {
@@ -28,20 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SimpleVote/build/static/js/4.313740bb.chunk.js"
   },
   {
-    "revision": "48a447ef79d11286c7b6",
-    "url": "/SimpleVote/build/static/js/5.368e951a.chunk.js"
+    "revision": "1472eb5a1bb0204b95c0",
+    "url": "/SimpleVote/build/static/js/5.6f0eb7cc.chunk.js"
   },
   {
-    "revision": "732f8836ffabf05f98c2",
-    "url": "/SimpleVote/build/static/js/6.107341f5.chunk.js"
+    "revision": "4e7391d24f61b45eb8e7",
+    "url": "/SimpleVote/build/static/js/6.3233a58a.chunk.js"
   },
   {
-    "revision": "c78bb02a60cc1688c9d7",
-    "url": "/SimpleVote/build/static/js/main.27e60ebf.chunk.js"
+    "revision": "0c71d3db2be166a3359e",
+    "url": "/SimpleVote/build/static/js/main.bac8a045.chunk.js"
   },
   {
-    "revision": "48a6c02cca48655e2bc4",
-    "url": "/SimpleVote/build/static/js/runtime-main.59935840.js"
+    "revision": "e20fa1223d80faba8aa0",
+    "url": "/SimpleVote/build/static/js/runtime-main.4ee5bb4b.js"
   },
   {
     "revision": "1c597ac188608a6c5dfc63b3db1449c4",

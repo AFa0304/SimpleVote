@@ -20,9 +20,8 @@ export default class App extends React.Component {
     return (
       <Container>
         <Suspense fallback={<Loading />}>
-          <Route path="/" exact component={TopicList} />
-          <Route path="/SimpleVote/build" exact component={TopicList} />
-          <Route path="/vote/:topicID" component={Vote} />
+          <Route path={process.env.PUBLIC_URL + "/"} exact component={TopicList} />
+          <Route path={process.env.PUBLIC_URL + "/vote/:topicID"} component={Vote} />
         </Suspense>
       </Container>
     )
